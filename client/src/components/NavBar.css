@@ -1,0 +1,98 @@
+.navbar {
+  background-color: #222f3e;
+  color: #f1f2f6;
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  justify-content: space-between;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  position: relative;
+}
+
+.navbar-logo {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #f1f2f6;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navbar-links li {
+  margin-left: 25px;
+  position: relative;
+}
+
+.navbar-links li a {
+  color: #f1f2f6;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  text-decoration: underline;
+  color: #70a1ff;
+}
+
+.navbar-user {
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-user:hover {
+  background-color: #004080;
+}
+
+.dropdown-arrow {
+  margin-left: 6px;
+  font-size: 0.7rem;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 24px;
+  background-color: #222f3e;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  margin-top: 6px;
+  min-width: 140px;
+  z-index: 1000;
+  animation: fadeInSlideDown 0.3s ease forwards;
+}
+
+.dropdown-menu li {
+  padding: 10px 15px;
+  color: #f1f2f6;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu li:hover {
+  background-color: #004080;
+}
+
+@keyframes fadeInSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
